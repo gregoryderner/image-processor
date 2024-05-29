@@ -1,0 +1,6 @@
+*.zip*
+*.sh*
+*.env
+
+node_modules
+.vscode

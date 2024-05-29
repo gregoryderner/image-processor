@@ -1,0 +1,30 @@
+{
+  "name": "image-processor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js",
+    "start:debug": "NODE_ENV=debug npx nodemon src/main.js",
+    "clearDLQ": "NODE_ENV=debug npx nodemon src/main.js --clearDLQ"
+  },
+  "engines": {
+    "node": ">=20.x"
+  },
+  "keywords": [],
+  "author": "Grégory Derner <gregoryderner@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@azure/service-bus": "^7.9.4",
+    "aws-sdk": "^2.1619.0",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "file-type": "^19.0.0",
+    "form-data": "^4.0.0",
+    "mongodb": "^6.6.1",
+    "sharp": "^0.33.4"
+  }
+}
